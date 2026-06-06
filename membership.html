@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply for exclusive access to Booky Elite Club. Gain private reserve options, customized leather bindings, and invitations to literary auctions.">
+    <title>Elite Club Membership — Booky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">B<span>oo</span>ky</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">The Collection</a></li>
+                <li><a href="membership.html" class="nav-link active">Elite Club</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="membership.html" class="btn btn-secondary" style="padding: 8px 20px; font-size: 10px;">Request
+                    Access</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Membership Layout Section -->
+    <section style="padding-top: 150px; min-height: 80vh;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 50px;">
+                <span class="section-tagline">Elite Club Portal</span>
+                <h1 class="section-title">Apply for private <span class="text-gold serif-italic">Access</span></h1>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div class="membership-grid">
+                <!-- Explanatory Text / Benefits -->
+                <div class="membership-text reveal">
+                    <div class="membership-benefit">
+                        <h3 class="benefit-title">01. VIP Pre-Release Allocations</h3>
+                        <p class="benefit-desc">Members receive personal allocations for all new releases 14 days before
+                            public release. Guarantee your collection contains early copy numbers (1-10).</p>
+                    </div>
+                    <div class="membership-benefit">
+                        <h3 class="benefit-title">02. Bespoke Binding Commissions</h3>
+                        <p class="benefit-desc">Direct access to our heritage binding ateliers. Request customized
+                            leather choice, family crest embossings, or bespoke gilding styling for any acquisition.</p>
+                    </div>
+                    <div class="membership-benefit">
+                        <h3 class="benefit-title">03. Dedicated Concierge Desk</h3>
+                        <p class="benefit-desc">A personal bibliophile expert assigned to manage your portfolio, track
+                            down rare global manuscripts, and coordinates secure private delivery.</p>
+                    </div>
+                </div>
+
+                <!-- Application Form -->
+                <div class="form-wrapper reveal" style="transition-delay: 200ms;">
+                    <h2 class="form-title">Membership Charter</h2>
+                    <p class="form-subtitle">Please lodge your details below. The Board reviews applications weekly.</p>
+
+                    <form id="membership-apply-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="client-name">Full Name</label>
+                                <input type="text" id="client-name" class="form-input"
+                                    placeholder="e.g. Sterling DuPont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-email">Email Address</label>
+                                <input type="email" id="client-email" class="form-input"
+                                    placeholder="e.g. dupont@luxury.com" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="client-interest">Area of Collector Interest</label>
+                                <select id="client-interest" class="form-input" style="background-color: #0c0e0c;"
+                                    required>
+                                    <option value="" disabled selected>Select your collection preference...</option>
+                                    <option value="Leather Limited Editions">Heritage Leather Bindings</option>
+                                    <option value="Signed Rare Pre-releases">Signed Pre-releases</option>
+                                    <option value="Historical Manuscripts">Historical Archives & Manuscripts</option>
+                                    <option value="Custom Bespoke Commissions">Bespoke Commisioned Binding</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="client-note">Introduction Note (Optional)</label>
+                                <textarea id="client-note" class="form-input"
+                                    placeholder="Briefly describe your library focus..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Lodge Membership
+                            Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">B<span>oo</span>ky</a>
+                    <p>Archiving historical knowledge and literature in its most premium, physical forms. Curated for
+                        bibliophiles of exquisite taste.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">The Collection</a></li>
+                        <li><a href="membership.html">Elite Club Applications</a></li>
+                        <li><a href="shop.html?filter=limited">Limited Editions</a></li>
+                        <li><a href="shop.html?filter=pre-release">Pre-Releases</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Concierge Desk</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="contactConcierge('Catalog Inquiries')">WhatsApp Business Chat</a></li>
+                        <li><a href="membership.html">Membership Benefits</a></li>
+                        <li><a href="#" onclick="alert('Contact Center: concierge@booky.elite')">Email:
+                                concierge@booky.elite</a></li>
+                        <li><a href="#" onclick="alert('Private Desk: +1 (555) 987-6543')">Private Desk: +1 (555)
+                                987-6543</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Booky Ltd. All Rights Reserved. Private & Confidential.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" onclick="alert('Privacy Policy for members.')">Privacy Charter</a>
+                    <a href="#" onclick="alert('Terms of acquisition.')">Acquisition Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+</body>
+
+</html>

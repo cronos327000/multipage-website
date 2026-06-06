@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Booky - An exclusive, premium bookstore curated for high-class book readers. Explore handcrafted limited editions, rare book bindings, and secure early access to pre-releases.">
+    <title>Booky — A Bookstore for the Elite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">B<span>oo</span>ky</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="shop.html" class="nav-link">The Collection</a></li>
+                <li><a href="membership.html" class="nav-link">Elite Club</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="membership.html" class="btn btn-secondary" style="padding: 8px 20px; font-size: 10px;">Request
+                    Access</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-tagline">Exclusivity. Rarity. Masterpieces.</span>
+                    <h1 class="hero-title">A Bookstore <br>for the <span class="text-gold serif-italic">Elite</span>
+                    </h1>
+                    <p class="hero-desc">Booky curated volumes are designed for the most discerning collectors. We
+                        provide private access to ultra-limited bindings, signed historical archives, and exclusive
+                        pre-releases before they reach the public eye.</p>
+                    <div class="hero-ctas">
+                        <a href="shop.html" class="btn btn-primary">Read Now</a>
+                        <button onclick="contactConcierge('Hero Reservation')" class="btn btn-secondary">Concierge
+                            Chat</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-book-display">
+                        <img src="assets/book_1.png" alt="Featured Elite Book Cover">
+                        <div class="hero-book-badge">
+                            <span class="badge-title">First Edition</span>
+                            <span class="badge-text">1 of 50 Handcrafted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Curated Masterpieces</span>
+                <h2 class="section-title">The Limited Editions</h2>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div class="featured-grid" id="home-featured-grid">
+                <!-- Book Cards Dynamically Loaded by JS -->
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;" class="reveal">
+                <a href="shop.html" class="btn btn-secondary">Browse the Full Catalogue</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Release Showcase -->
+    <section
+        style="background: rgba(18, 22, 18, 0.5); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);"
+        class="reveal">
+        <div class="container">
+            <div class="hero-grid" style="grid-template-columns: 0.9fr 1.1fr;">
+                <div class="hero-visual" style="animation: none; opacity: 1; transform: none;">
+                    <div class="hero-book-display" style="width: 250px; height: 360px;">
+                        <img src="assets/book_3.png" alt="Sovereigns of the Cosmos Pre-release Cover">
+                    </div>
+                </div>
+                <div class="hero-content" style="animation: none; opacity: 1; transform: none;">
+                    <span class="hero-tagline">Upcoming Acquisitions</span>
+                    <h2 class="section-title" style="margin-bottom: 20px;">Secure Access to <span
+                            class="text-gold serif-italic">Pre-Releases</span></h2>
+                    <p class="hero-desc" style="margin-bottom: 30px;">Gain private reservations for upcoming titles
+                        before print. Our pre-releases are strictly capped, ensuring each copy's investment and
+                        historical value increases over time. Discover our upcoming piece: <strong>Sovereigns of the
+                            Cosmos</strong>.</p>
+                    <div class="hero-ctas">
+                        <a href="book-detail.html?id=3" class="btn btn-primary">Pre-Order Details</a>
+                        <button onclick="contactConcierge('Pre-Release Inquiry')" class="btn btn-secondary">Inquire
+                            Status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concierge Banner -->
+    <section class="reveal">
+        <div class="container">
+            <div class="concierge-banner">
+                <span class="concierge-tag">Bespoke Concierge</span>
+                <h2 class="concierge-title">Acquire Books Tailored to Your Personal Collection</h2>
+                <p class="concierge-desc">Seeking a specific rare first-edition, bespoke leather binding, or a private
+                    curatorial service for your library? Speak directly with our lead bibliophile advisor via WhatsApp.
+                </p>
+                <button onclick="contactConcierge('Bespoke Library Inquiry')" class="btn btn-primary"
+                    style="display:flex; align-items:center; gap:10px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.233-1.371a9.994 9.994 0 0 0 4.779 1.205h.005c5.505 0 9.99-4.478 9.99-9.985C22.007 6.478 17.518 2 12.012 2zm6.069 14.141c-.252.712-1.462 1.307-2.014 1.388-.5.074-1.15.107-1.83-.115-2.72-.887-4.479-3.66-4.614-3.844-.136-.184-1.102-1.469-1.102-2.805 0-1.337.697-1.996.944-2.261.248-.266.541-.332.721-.332.18 0 .36.002.518.01.162.007.382-.062.597.456.225.54.765 1.868.832 2.003.067.136.112.294.022.474-.09.18-.135.293-.27.451-.135.158-.283.352-.405.473-.135.135-.276.282-.12.551.157.269.7 1.147 1.498 1.859.932.833 1.72 1.09 1.963 1.21.243.12.387.102.53-.062.145-.164.613-.715.776-.957.163-.243.326-.203.551-.12.225.082 1.428.674 1.675.798.248.124.41.186.472.293.062.107.062.618-.19 1.33z" />
+                    </svg>
+                    Contact Private Concierge
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">B<span>oo</span>ky</a>
+                    <p>Archiving historical knowledge and literature in its most premium, physical forms. Curated for
+                        bibliophiles of exquisite taste.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">The Collection</a></li>
+                        <li><a href="membership.html">Elite Club Applications</a></li>
+                        <li><a href="shop.html?filter=limited">Limited Editions</a></li>
+                        <li><a href="shop.html?filter=pre-release">Pre-Releases</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Concierge Desk</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="contactConcierge('Catalog Inquiries')">WhatsApp Business Chat</a></li>
+                        <li><a href="membership.html">Membership Benefits</a></li>
+                        <li><a href="#" onclick="alert('Contact Center: concierge@booky.elite')">Email:
+                                concierge@booky.elite</a></li>
+                        <li><a href="#" onclick="alert('Call Center: +1 (555) 987-6543')">Private Desk: +1 (555)
+                                987-6543</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Booky Ltd. All Rights Reserved. Private & Confidential.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" onclick="alert('Privacy Policy for members.')">Privacy Charter</a>
+                    <a href="#" onclick="alert('Terms of acquisition.')">Acquisition Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrpit.js"></script>
+</body>
+
+</html>
